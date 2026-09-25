@@ -1,73 +1,74 @@
+
 {
-    "version": "1.0.0",
-    "rss": "https://helios-files.geekcorner.eu.org/rss.xml",
-    "discord": {
-        "clientId": "1086936373057040395",
-        "smallImageText": "Change me through Nebula",
-        "smallImageKey": "big"
-    },
-    "servers": [
+  "version": "1.0.0",
+  "rss": "https://helios-files.geekcorner.eu.org/rss.xml",
+  "discord": {
+    "clientId": "1086936373057040395",
+    "smallImageText": "Change me through Nebula",
+    "smallImageKey": "big"
+  },
+  "servers": [
+    {
+      "id": "Aster-1.8.9",
+      "name": "Aster Client 1.8.9",
+      "description": "Aster Client para Minecraft 1.8.9",
+      "icon": "https://helios-files.geekcorner.eu.org/servers/Demo-1.19.4/Demo-1.19.4.png",
+      "version": "1.0.0",
+      "address": "localhost:25565",
+      "minecraftVersion": "1.8.9",
+      "discord": {
+        "shortId": "1.19.4 Demo",
+        "largeImageKey": "https://raw.githubusercontent.com/dscalzi/HeliosLauncher/master/build/icon.png",
+        "largeImageText": "forge-vanilla"
+      },
+      "mainServer": true,
+      "autoconnect": false,
+      "modules": [
         {
-            "id": "Aster-1.8.9",
-            "name": "Aster Client 1.8.9",
-            "description": "Aster Client para Minecraft 1.8.9",
-            "icon": "https://helios-files.geekcorner.eu.org/servers/Demo-1.19.4/Demo-1.19.4.png",
-            "version": "1.0.0",
-            "address": "localhost:25565",
-            "minecraftVersion": "1.8.9",
-            "discord": {
-                "shortId": "1.19.4 Demo",
-                "largeImageKey": "https://raw.githubusercontent.com/dscalzi/HeliosLauncher/master/build/icon.png",
-                "largeImageText": "forge-vanilla"
+          "id": "net.minecraftforge:forge:1.8.9-11.15.1.2318-1.8.9",
+          "name": "Minecraft Forge 1.8.9",
+          "classpath": true,
+          "type": "ForgeHosted",
+          "subModules": [
+            {
+              "name": "Minecraft Forge (version.json)",
+              "id": "1.8.9-11.15.1.2318-1.8.9",
+              "type": "VersionManifest",
+              "artifact": {
+                "url": "https://github.com/arthurmiguel7177-sudo/Aster-Client-v6/releases/download/v2.0/forge-1.8.9.json",
+                "MD5": "585b3ff0a5ff0c6de9c8ce4cf6015e9c",
+                "size": 4393
+              }
             },
-            "mainServer": true,
-            "autoconnect": false,
-            "modules": [
-                {
-                    "id": "net.minecraftforge:forge:1.8.9-11.15.1.2318-1.8.9",
-                    "name": "Minecraft Forge 1.8.9",
-                    "classpath": true,
-                    "type": "ForgeHosted",
-                    "subModules": [
-                        {
-                            "name": "Minecraft Forge (version.json)",
-                            "id": "1.8.9-11.15.1.2318-1.8.9",
-                            "type": "VersionManifest",
-                            "artifact": {
-                                "url": "http://127.0.0.1:8765/forge-1.8.9.json",
-                                "MD5": "585b3ff0a5ff0c6de9c8ce4cf6015e9c",
-                                "size": 4393
-                            }
-                        },
-                        {
-                            "id": "net.minecraft:launchwrapper:1.12",
-                            "name": "Minecraft LaunchWrapper 1.12",
-                            "type": "Library",
-                            "classpath": true,
-                            "artifact": {
-                                "url": "https://libraries.minecraft.net/net/minecraft/launchwrapper/1.12/launchwrapper-1.12.jar",
-                                "MD5": "934b2d91c7c5be4a49577c9e6b40e8da",
-                                "size": 32999
-                            }
-                        }
-                    ],
-                    "artifact": {
-                        "url": "http://127.0.0.1:8765/forge-1.8.9.jar",
-                        "MD5": "b97a4c5bc653c957663e7b0de17a3c09",
-                        "size": 3805686
-                    }
-                },
-                {
-                    "name": "Aster Client",
-                    "id": "asterclient:asterclient:1.8.9@jar",
-                    "type": "ForgeMod",
-                    "artifact": {
-                        "url": "http://127.0.0.1:8765/AsterClient-1.8.9.jar",
-                        "MD5": "cdc5f9e5d8a08bd78425c261a1fbe97d",
-                        "size": 16948991
-                    }
-                }
-            ]
+            {
+              "id": "net.minecraft:launchwrapper:1.12",
+              "name": "Minecraft LaunchWrapper 1.12",
+              "type": "Library",
+              "classpath": true,
+              "artifact": {
+                "url": "https://libraries.minecraft.net/net/minecraft/launchwrapper/1.12/launchwrapper-1.12.jar",
+                "MD5": "934b2d91c7c5be4a49577c9e6b40e8da",
+                "size": 32999
+              }
+            }
+          ],
+          "artifact": {
+            "url": "https://github.com/arthurmiguel7177-sudo/Aster-Client-v6/releases/download/v2.0/forge-1.8.9.jar",
+            "MD5": "b97a4c5bc653c957663e7b0de17a3c09",
+            "size": 3805686
+          }
+        },
+        {
+          "name": "Aster Client",
+          "id": "asterclient:asterclient:1.8.9@jar",
+          "type": "ForgeMod",
+          "artifact": {
+            "url": "https://github.com/arthurmiguel7177-sudo/Aster-Client-v6/releases/download/v2.0/AsterClient-1.8.9.jar",
+            "MD5": "cdc5f9e5d8a08bd78425c261a1fbe97d",
+            "size": 16948991
+          }
         }
-    ]
+      ]
+    }
+  ]
 }
