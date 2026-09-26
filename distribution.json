@@ -1,74 +1,117 @@
-
 {
-  "version": "1.0.0",
-  "rss": "https://helios-files.geekcorner.eu.org/rss.xml",
-  "discord": {
-    "clientId": "1086936373057040395",
-    "smallImageText": "Change me through Nebula",
-    "smallImageKey": "big"
-  },
-  "servers": [
-    {
-      "id": "Aster-1.8.9",
-      "name": "Aster Client 1.8.9",
-      "description": "Aster Client para Minecraft 1.8.9",
-      "icon": "https://helios-files.geekcorner.eu.org/servers/Demo-1.19.4/Demo-1.19.4.png",
-      "version": "1.0.0",
-      "address": "localhost:25565",
-      "minecraftVersion": "1.8.9",
-      "discord": {
-        "shortId": "1.19.4 Demo",
-        "largeImageKey": "https://raw.githubusercontent.com/dscalzi/HeliosLauncher/master/build/icon.png",
-        "largeImageText": "forge-vanilla"
-      },
-      "mainServer": true,
-      "autoconnect": false,
-      "modules": [
-        {
-          "id": "net.minecraftforge:forge:1.8.9-11.15.1.2318-1.8.9",
-          "name": "Minecraft Forge 1.8.9",
-          "classpath": true,
-          "type": "ForgeHosted",
-          "subModules": [
-            {
-              "name": "Minecraft Forge (version.json)",
-              "id": "1.8.9-11.15.1.2318-1.8.9",
-              "type": "VersionManifest",
-              "artifact": {
-                "url": "https://github.com/arthurmiguel7177-sudo/Aster-Client-v6/releases/download/v2.0/forge-1.8.9.json",
-                "MD5": "585b3ff0a5ff0c6de9c8ce4cf6015e9c",
-                "size": 4393
-              }
-            },
-            {
-              "id": "net.minecraft:launchwrapper:1.12",
-              "name": "Minecraft LaunchWrapper 1.12",
-              "type": "Library",
-              "classpath": true,
-              "artifact": {
-                "url": "https://libraries.minecraft.net/net/minecraft/launchwrapper/1.12/launchwrapper-1.12.jar",
-                "MD5": "934b2d91c7c5be4a49577c9e6b40e8da",
-                "size": 32999
-              }
-            }
-          ],
-          "artifact": {
-            "url": "https://github.com/arthurmiguel7177-sudo/Aster-Client-v6/releases/download/v2.0/forge-1.8.9.jar",
-            "MD5": "b97a4c5bc653c957663e7b0de17a3c09",
-            "size": 3805686
-          }
-        },
-        {
-          "name": "Aster Client",
-          "id": "asterclient:asterclient:1.8.9@jar",
-          "type": "ForgeMod",
-          "artifact": {
-            "url": "https://github.com/arthurmiguel7177-sudo/Aster-Client-v6/releases/download/v2.0/AsterClient-1.8.9.jar",
-            "MD5": "cdc5f9e5d8a08bd78425c261a1fbe97d",
-            "size": 16948991
-          }
-        }
-      ]
-    }
-  ]
+    "version":  "1.0.0",
+    "rss":  "https://helios-files.geekcorner.eu.org/rss.xml",
+    "discord":  {
+                    "clientId":  "1086936373057040395",
+                    "smallImageText":  "Change me through Nebula",
+                    "smallImageKey":  "big"
+                },
+    "servers":  [
+                    {
+                        "id":  "Aster-1.8.9",
+                        "name":  "Aster Client 1.8.9",
+                        "description":  "Aster Client para Minecraft 1.8.9",
+                        "icon":  "https://helios-files.geekcorner.eu.org/servers/Demo-1.19.4/Demo-1.19.4.png",
+                        "version":  "1.0.0",
+                        "address":  "localhost:25565",
+                        "minecraftVersion":  "1.8.9",
+                        "discord":  {
+                                        "shortId":  "1.19.4 Demo",
+                                        "largeImageKey":  "https://raw.githubusercontent.com/dscalzi/HeliosLauncher/master/build/icon.png",
+                                        "largeImageText":  "forge-vanilla"
+                                    },
+                        "mainServer":  true,
+                        "autoconnect":  false,
+                        "modules":  [
+                                        {
+                                            "id":  "net.minecraftforge:forge:1.8.9-11.15.1.2318-1.8.9",
+                                            "name":  "Minecraft Forge 1.8.9",
+                                            "classpath":  true,
+                                            "type":  "ForgeHosted",
+                                            "subModules":  [
+                                                               {
+                                                                   "name":  "Minecraft Forge (version.json)",
+                                                                   "id":  "1.8.9-11.15.1.2318-1.8.9",
+                                                                   "type":  "VersionManifest",
+                                                                   "artifact":  {
+                                                                                    "url":  "https://github.com/arthurmiguel7177-sudo/Aster-Client-v6/releases/download/v2.0/forge-1.8.9.json",
+                                                                                    "MD5":  "585b3ff0a5ff0c6de9c8ce4cf6015e9c",
+                                                                                    "size":  4393
+                                                                                }
+                                                               },
+                                                               {
+                                                                   "id":  "net.minecraft:launchwrapper:1.12",
+                                                                   "name":  "Minecraft LaunchWrapper 1.12",
+                                                                   "type":  "Library",
+                                                                   "classpath":  true,
+                                                                   "artifact":  {
+                                                                                    "url":  "https://libraries.minecraft.net/net/minecraft/launchwrapper/1.12/launchwrapper-1.12.jar",
+                                                                                    "MD5":  "934b2d91c7c5be4a49577c9e6b40e8da",
+                                                                                    "size":  32999
+                                                                                }
+                                                               },
+                                                               {
+                                                                   "artifact":  {
+                                                                                    "url":  "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-all/5.0.3/asm-all-5.0.3.jar",
+                                                                                    "MD5":  "c5cc4613bbdfba3ccf5f0ab85390d0b8",
+                                                                                    "size":  241639
+                                                                                },
+                                                                   "name":  "ASM 5.0.3",
+                                                                   "id":  "org.ow2.asm:asm-all:5.0.3",
+                                                                   "type":  "Library",
+                                                                   "classpath":  true
+                                                               },
+                                                               {
+                                                                   "artifact":  {
+                                                                                    "url":  "https://libraries.minecraft.net/lzma/lzma/0.0.1/lzma-0.0.1.jar",
+                                                                                    "MD5":  "a3e3c3186e41c4a1a3027ba2bb23cdc6",
+                                                                                    "size":  5762
+                                                                                },
+                                                                   "name":  "LZMA 0.0.1",
+                                                                   "id":  "lzma:lzma:0.0.1",
+                                                                   "type":  "Library",
+                                                                   "classpath":  true
+                                                               },
+                                                               {
+                                                                   "artifact":  {
+                                                                                    "url":  "https://repo.maven.apache.org/maven2/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar",
+                                                                                    "MD5":  "8fc4d4e0129244f9fd39650c5f30feb2",
+                                                                                    "size":  2523218
+                                                                                },
+                                                                   "name":  "Trove4j 3.0.3",
+                                                                   "id":  "net.sf.trove4j:trove4j:3.0.3",
+                                                                   "type":  "Library",
+                                                                   "classpath":  true
+                                                               },
+                                                               {
+                                                                   "artifact":  {
+                                                                                    "url":  "https://repo.maven.apache.org/maven2/javax/vecmath/vecmath/1.5.2/vecmath-1.5.2.jar",
+                                                                                    "MD5":  "d9b620971b2dc84d3b3cc4ad6aeccfbc",
+                                                                                    "size":  169541
+                                                                                },
+                                                                   "name":  "Vecmath 1.5.2",
+                                                                   "id":  "javax.vecmath:vecmath:1.5.2",
+                                                                   "type":  "Library",
+                                                                   "classpath":  true
+                                                               }
+                                                           ],
+                                            "artifact":  {
+                                                             "url":  "https://github.com/arthurmiguel7177-sudo/Aster-Client-v6/releases/download/v2.0/forge-1.8.9.jar",
+                                                             "MD5":  "b97a4c5bc653c957663e7b0de17a3c09",
+                                                             "size":  3805686
+                                                         }
+                                        },
+                                        {
+                                            "name":  "Aster Client",
+                                            "id":  "asterclient:asterclient:1.8.9@jar",
+                                            "type":  "ForgeMod",
+                                            "artifact":  {
+                                                             "url":  "https://github.com/arthurmiguel7177-sudo/Aster-Client-v6/releases/download/v2.0/AsterClient-1.8.9.jar",
+                                                             "MD5":  "cdc5f9e5d8a08bd78425c261a1fbe97d",
+                                                             "size":  16948991
+                                                         }
+                                        }
+                                    ]
+                    }
+                ]
 }
